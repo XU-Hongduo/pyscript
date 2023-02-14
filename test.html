@@ -1,0 +1,39 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+
+    <!-- 通过此调用不包含的python包 -->
+    <py-env>
+        - numpy
+    </py-env>
+
+</head>
+
+<body>
+    <div id="output"></div>
+
+    <!-- 通过此调用方外部id输出，结果为div输出的内容 -->
+    <!-- test1 -->
+    <!-- <py-script>
+        def getSum(x,y):
+            return x + y
+        sum = getSum (5,6)
+        pyscript.write('output',sum)
+    </py-script> -->
+
+    <!-- test2 -->
+    <!-- <py-script>
+        import numpy as np
+        arr = np.array([1,2,3])
+        pyscript.write('output', f"My array are {arr}")
+    </py-script> -->
+
+    <!-- test3 -->
+    <!-- 通过调用外部py文件 -->
+    <py-script src="main.py"></py-script>
+
+</body>
+
+</html>
